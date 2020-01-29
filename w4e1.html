@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head><title> COLORCHOOSE</title>
+     <!--<script>
+document.getElementById("b1").addEventListener("click", myFunction);
+document.getElementById("b2").addEventListener("click", myFunction);
+document.getElementById("b3").addEventListener("click", myFunction);
+//document.getElementById("colorText").innerHTML="ReD";
+  document.body.style.backgroundColor=#346D35;
+
+function myFunction() {
+    document.getElementById("colorText").innerHTML="ReD";
+  document.body.style.backgroundColor=#346D35;
+}
+</script>-->
+    </head>
+<body>
+
+<p>  Name: M.W.F. Junaid
+            Roll no.: 1602-17-737-020 
+            Sem:VI LAB:WebTech  </p>
+        <form>		
+            <p>Choose one colour :</p>		
+            <pre>            
+            <input id=b1 type="radio" name="bgcRbtns" class="radioColor" value="Light_Blue">Light Blue            
+            <input id=b2 type="radio" name="bgcRbtns" checked class="radioColor" value="Light_Yellow">Light Yellow            
+            <input id=b3 type="radio" name="bgcRbtns" class="radioColor" value="Light_Green">Light Green        
+            </pre>		
+            You have chosen <span id="colorText"></span>		
+            <br>		
+            Count of radio buttons is : <span id="radioCount"></span>
+        </form>
+
+    <script>
+document.getElementById("b1").addEventListener("click", myFunctiona);
+document.getElementById("b2").addEventListener("click", myFunctionb);
+document.getElementById("b3").addEventListener("click", myFunctionc);
+        var btns=document.getElementsByName("bgcRbtns");
+document.getElementById("radioCount").innerHTML=btns.length;
+
+function myFunctiona() {
+    document.getElementById("colorText").innerHTML="Light Blue";
+  document.body.style.backgroundColor="#66CCFF";
+}
+        function myFunctionb() {
+    document.getElementById("colorText").innerHTML="Light Yellow";
+  document.body.style.backgroundColor="#FFFF66";
+}
+        function myFunctionc() {
+    document.getElementById("colorText").innerHTML="Light Green";
+  document.body.style.backgroundColor="#B3FF99";
+}
+</script> 
+
+</body>
+</html>
